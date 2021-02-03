@@ -10,7 +10,7 @@ The following topics has been covered:
 - Webpack entry point, output and dist folder
 - Webpack Loaders, Plugins and Mode
 - API calls
-- Testing
+- Testing using [Jest](https://jestjs.io/en/)
 - Offline functionality
 
 ## Installation
