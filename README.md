@@ -9,15 +9,17 @@ The following topics has been covered:
 
 - Webpack entry point, output and dist folder
 - Webpack Loaders, Plugins and Mode
-- API calls
+- API calls (this project relies on [MeaningCloud](https://www.meaningcloud.com/) API for sentiment analysis)
 - Testing using [Jest](https://jestjs.io/en/)
 - Offline functionality
 
 ## Installation
 1. Install [Node](https://nodejs.org/en/).
 2. `npm install`
-3. `npm run build-prod`
-4. `npm start` to start the app
+3. Add `.env` file to the project that contains your [MeaningCloud](https://www.meaningcloud.com/) API key
+   in the following way `API_KEY=yourKey`
+4. `npm run build-prod`
+5. `npm start` to start the app
 
 This app runs on localhost:8081, but you can change this in `server.js`
 
