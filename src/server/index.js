@@ -43,7 +43,13 @@ app.post('/analyse', async function (req, res) {
     });
 
     try {
-        res.send(await apiRes.json());
+        const jsonRes = await apiRes.json();
+        res.send({
+            score_tag: jsonRes.score_tag,
+            agreement: jsonRes.agreement,
+            subjectivity: jsonRes.subjectivity,
+            confidence: jsonRes.confidence
+        });
     } catch (error) {
         console.log("error", error);
     }
