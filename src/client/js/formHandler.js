@@ -4,6 +4,8 @@ function handleSubmit(event) {
     // check what text was put into the form field
     let text = document.getElementById('name').value
 
+    Client.checkText(text);
+
     console.log("::: Form Submitted :::")
     fetch('http://localhost:8081/analyse', {
         method: 'POST',
